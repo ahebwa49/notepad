@@ -11,3 +11,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#notepad {
+  display: grid;
+  padding: "2rem";
+  margin: "2rem";
+  justify-items: center;
+  grid-template-areas:
+    "plus-button heading"
+    "title content";
+   
+}
+#button {
+  grid-area: "plus-button";
+  border: 1px solid red;
+  justify-items: center;
+  align-self: center;
+  align-items: center;
+}
+#heading {
+  grid-area: "heading";
+  border: 1px solid red;
+  justify-items: center;
+}
+#title {
+  grid-area: "title";
+  justify-items: center;
+}
+#content {
+  display:grid;
+  grid-area: "content";
+  justify-items: center;
+  width: 70%;
+}
